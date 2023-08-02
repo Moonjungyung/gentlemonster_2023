@@ -1,0 +1,60 @@
+/* header */
+header {
+    background: aqua;
+    width: calc(100% - 60px);
+    height: 100px; 
+    margin: 0 auto;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {width: 209px;}
+header h1 a {}
+header h1 a img {width: 100%;}
+header .right>* {
+    margin-right: 24px;
+}
+header .right {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
+header .right .lang {
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+}
+header .right #search_frm {
+    background-color: #0094FF;
+    border-radius: 4px;
+}
+header .right #search_frm fieldset {
+    padding: 6px 12px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .right #search_frm fieldset #search_txt {
+    color: #fff;
+    letter-spacing: -0.02em;
+    background: none;
+}
+header .right #search_frm fieldset #search_txt::placeholder {
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+header .right #search_frm fieldset #search_btn {
+    background: none;
+}
+header .right #search_frm fieldset #search_btn img {
+}
+header .right #login {}
+header .right #login img {}
+header .right #cart {}
+header .right #cart img {}
+header .right #menu {
+    margin-right: 0;
+}
+header .right #menu img {}
+/* main */
+main {}
+/* 1. */
