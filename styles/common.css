@@ -78,6 +78,7 @@ header #open_nav {
 }
 header #open_nav #nav_close {
     position: absolute; right: 103px; top: 52px;
+    z-index: 9500;
 }
 header #open_nav #nav_close img {}
 header #open_nav #nav_adver {
