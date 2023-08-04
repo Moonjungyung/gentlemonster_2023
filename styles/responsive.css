@@ -1,0 +1,10 @@
+/* 반응형 웹 */
+@media screen and (max-width:1669px){
+    /* 1500px 이하일 때 */
+    main .visual video {
+        width: auto; height: 100%;
+    }
+}/* 1500 end */
+@media screen and (max-width:900px){
+    #lang {display: none;}
+}

@@ -1,0 +1,99 @@
+/* main */
+main {}
+/* main 1. visual */
+main .visual {
+    position: relative; height: 100vh;
+    overflow: hidden;
+}
+main .visual .txt {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 67%;
+}
+main .visual .txt>* {
+    margin-bottom: 30px;
+    color: #fff;
+}
+main .visual .txt p {
+    font-size: 2.369rem; letter-spacing: -0.02em;
+}
+main .visual .txt h1 {
+    font-size: 3.157rem; letter-spacing: -0.02em;
+    font-weight: 700;
+}
+main .visual .txt .link {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+}
+main .visual .txt .link a {
+    font-size: 1.333rem; color: #fff; letter-spacing: -0.02em;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff; border-radius: 4px; z-index: 8000;
+    transition: all 0.5s;
+}
+main .visual .txt .link a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+main .visual .txt .link a:first-child {
+    padding: 20px 30px;
+    margin-right: 20px;
+}
+main .visual .txt .link a:last-child {
+    padding: 20px 55px;
+}
+main .visual video {
+    width: 100%;
+    position: absolute; left: 50%;
+    transform: translateX(-50%);
+    /* 화면크기 조정 시 비디오 중심축 맞추기 */
+    /* 필수조건 !! 비디오의 부모가 vh또는 px로 높이설정이 되어있어야 함 */
+    /* 방법3 절대크기값 */
+    /* width: 1920px; */
+}
+/* 와이드 비율의 video 화면 전체 배치 시 여백해결법 */
+/* 1 반응형웹 @media 특정해상도마다 비디오의 크기 설정값 변경 */
+/* 2. 가장 큰 데스크탑 기준으로 너비를 100%보다 크게 설정하고 넘치게 하는 법 */
+/* 3. 상대크기가 아닌 절대크키(px)값으로 크기를 설정해서 화면 해상도에 영향을 받지 않는 방법 */
+main .adver_bnr {
+    background: url(../images/bnr.jpg);
+    height: 300px;
+    position: relative;
+}
+main .adver_bnr .txt {
+    position: absolute;
+    width: 94%; top: 24%;
+    text-align: right;
+}
+main .adver_bnr .txt>*{
+    margin-bottom: 20px;
+}
+main .adver_bnr .txt p {
+    font-size: 1.777rem; letter-spacing: -0.02em;
+}
+main .adver_bnr .txt h1 {
+    font-size: 3.157rem; font-weight: 700;
+    letter-spacing: -0.02em;
+}
+main .adver_bnr .txt .link {
+    display: flex; flex-flow: row nowrap;
+    justify-content: right;
+}
+main .adver_bnr .txt .link a {
+    font-size: 1.333rem; color: #fff;
+    background-color: #000;
+    letter-spacing: -0.02em;
+    border-radius: 10px;
+    transition: border 0.5s, color 0.5s, background-color 0.5s;
+}
+main .adver_bnr .txt .link a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+main .adver_bnr .txt .link a:first-child {
+    padding: 10px 31px;
+    margin-right: 20px;
+}
+main .adver_bnr .txt .link a:last-child {
+    padding: 10px 20px;
+}
