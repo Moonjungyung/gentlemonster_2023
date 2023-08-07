@@ -58,12 +58,13 @@ main .visual video {
 main .adver_bnr {
     background: url(../images/bnr.jpg);
     height: 300px;
-    position: relative;
 }
 main .adver_bnr .txt {
-    position: absolute;
-    width: 94%; top: 24%;
+    /* contents width px */
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: right;
+    padding: 70px 0;
 }
 main .adver_bnr .txt>*{
     margin-bottom: 20px;
@@ -82,6 +83,7 @@ main .adver_bnr .txt .link {
 main .adver_bnr .txt .link a {
     font-size: 1.333rem; color: #fff;
     background-color: #000;
+    border: 2px solid #000;
     letter-spacing: -0.02em;
     border-radius: 10px;
     transition: border 0.5s, color 0.5s, background-color 0.5s;
@@ -89,6 +91,7 @@ main .adver_bnr .txt .link a {
 main .adver_bnr .txt .link a:hover {
     background-color: rgba(255, 255, 255, 0.9);
     color: #000;
+    border: 2px solid #000;
 }
 main .adver_bnr .txt .link a:first-child {
     padding: 10px 31px;
@@ -96,4 +99,94 @@ main .adver_bnr .txt .link a:first-child {
 }
 main .adver_bnr .txt .link a:last-child {
     padding: 10px 20px;
+}
+/* 온라인서비스 */
+main #online_service {
+    background-position: right center;
+    background-image: url(../images/service_bg1.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    margin-top: 120px;
+}
+main #online_service .txt>* {
+    margin-bottom: 40px;
+}
+main #online_service .txt {
+    width: 797px;
+    padding: 54px 118px;
+    margin-top: 60px;
+    background: #fff;
+    display: flex; flex-flow: column nowrap;
+    letter-spacing: -0.02em;
+}
+main #online_service .txt h2 {
+    font-size: 2.369rem; font-weight: 700;
+}
+main #online_service .txt p {
+    font-size: 1.333rem;
+    line-height: 32px;
+}
+main #online_service .txt .service_link {
+    padding: 14px 20px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.333rem;
+    align-self: start;
+    margin-bottom: 0;
+    border: 2px solid #000;
+    transition: all 0.3s;
+}
+main #online_service .txt .service_link:hover {
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+/* 매장서비스 */
+main #shop_service {
+    background-position: left center;
+    background-image: url(../images/service_bg2.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    margin-top: 120px;
+    display: flex; flex-flow: row-reverse;
+}
+main #shop_service .txt>*{
+    margin-bottom: 40px;
+    letter-spacing: -0.02em;
+}
+main #shop_service .txt{
+    width: 797px;
+    padding: 54px 118px;
+    margin-top: 60px;
+    background: #fff;
+    letter-spacing: -0.02em;
+    text-align: end;
+    display: flex; flex-flow: column nowrap;
+    align-items: end;
+}
+main #shop_service .txt h2{
+    font-size: 2.369rem; font-weight: 700;
+}
+main #shop_service .txt p{
+    font-size: 1.333rem;
+    line-height: 32px;
+}
+main #shop_service .txt .shop_link{
+    padding: 14px 20px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.333rem;
+    align-self: end;
+    margin-bottom: 0;
+    border: 2px solid #000;
+    transition: all 0.3s;
+}
+main #shop_service .txt .shop_link:hover {
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
 }
