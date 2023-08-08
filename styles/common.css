@@ -132,3 +132,45 @@ header #open_nav nav a:hover::after {
 header #open_nav nav a:hover {
     color: #222;
 }
+/* footer */
+footer {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+}
+footer .f_menu {
+    display: flex;
+    margin: 100px 0 116px;
+}
+footer .f_menu dl {
+    letter-spacing: -0.02em;
+    margin-right: 150px;
+}
+footer .f_menu dl:last-child {
+    margin-right: 0;
+}
+footer .f_menu dl dt {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+footer .f_menu dl dd {}
+footer .f_menu dl dd a {
+    line-height: 28px;
+    color: #999;
+}
+footer .f_menu dl dd a:hover {
+    color: #000;
+}
+footer .f_copy {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+footer .f_copy .logo {
+    width: 192px; height: 18px;
+    margin-right: 36px;
+}
+footer .f_copy .logo img {width: 100%;}
+footer .f_copy address {
+    font-size: 0.75rem; color: #999;
+    letter-spacing: -0.02em; line-height: 24px;
+}
