@@ -37,14 +37,23 @@ main .login_bg #login_frm fieldset .login_sub {
     justify-content: space-between;
 }
 main .login_bg #login_frm fieldset .login_sub .id_frm {}
-main .login_bg #login_frm fieldset .login_sub .id_frm #save {}
-main .login_bg #login_frm fieldset .login_sub .id_frm #save {
-    margin-right: 4px; 
+main .login_bg #login_frm fieldset .login_sub .id_frm label {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
 }
-main .login_bg #login_frm fieldset .login_sub .id_frm label {}
-main .login_bg #login_frm fieldset .login_sub .id_frm label span {}
+main .login_bg #login_frm fieldset .login_sub .id_frm label input {
+    appearance: none;
+}
 main .login_bg #login_frm fieldset .login_sub .id_frm label span {
-    background-image: url(../images/check_box_on.png);
+    width: 24px; height: 24px; display: inline-block;
+    background-image: url(../images/checkbox_off.png);
+}
+main .login_bg #login_frm fieldset .login_sub .id_frm label input:checked ~ span {
+    width: 24px; height: 24px; display: inline-block;
+    background-image: url(../images/checkbox_on.png);
+}
+main .login_bg #login_frm fieldset .login_sub .id_frm label p {
+    margin-left: 4px;
 }
 main .login_bg #login_frm fieldset .login_sub .find_frm {}
 main .login_bg #login_frm fieldset .login_sub .find_frm .find_id {}
@@ -65,14 +74,14 @@ main .login_bg #login_frm fieldset .fast_login a:nth-child(2) {
     margin-left: 20px; margin-right: 20px;
 }
 main .login_bg #login_frm fieldset .fast_login a img {}
-main .login_bg #login_frm fieldset p {}
-main .login_bg #login_frm fieldset p::before {
+main .login_bg #login_frm fieldset > p {}
+main .login_bg #login_frm fieldset > p::before {
     content: ''; display: inline-block;
     background-color: #000;
     width: 193px; height: 1px;
     margin-bottom: 5px; margin-right: 15px;
 }
-main .login_bg #login_frm fieldset p::after {
+main .login_bg #login_frm fieldset > p::after {
     content: ''; display: inline-block;
     background-color: #000;
     width: 193px; height: 1px;
