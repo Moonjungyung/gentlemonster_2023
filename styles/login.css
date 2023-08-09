@@ -81,6 +81,7 @@ main .login_bg #login_frm fieldset p::after {
 main .login_bg #login_frm fieldset #membership_btn {
     padding: 22px 0; background-color: #000;
     color: #fff;
+    margin-bottom: 20px;
 }
 main .login_bg #login_frm fieldset #non_member_btn {
     padding: 22px 0; background-color: #000;
