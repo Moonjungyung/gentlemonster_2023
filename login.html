@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>LOGIN | GENTLEMONSTER</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1><a href="#"><img src="./images/logo.png" alt="GENTLEMONSTER"></a></h1>
+        <div class="right">
+            <a href="#" class="lang">Shop in KR</a>
+            <form action="#" method="get" id="search_frm">
+                    <fieldset>
+                        <legend class="skip">검색양식</legend>
+                        <input type="text" id="search_txt" placeholder="검색어를 입력하세요" autofocus>
+                        <button type="submit" id="search_btn"><img src="./images/icon_search.png" alt=""></button>
+                </fieldset>
+            </form>
+            <a href="#" id="login"><img src="./images/icon_person.png" alt="로그인"></a>
+            <a href="#" id="cart"><img src="./images/icon_mall.png" alt="장바구니"></a>
+            <a href="#" id="nav"><img src="./images/icon_list.png" alt="메뉴"></a>
+        </div>
+        <!-- nav 클릭 시 open nav -->
+        <div id="open_nav">
+            <!-- 닫기버튼 -->
+            <button id="nav_close" type="button"><img src="./images/nav_close.png" alt="닫기"></button>
+            <!-- 광고 슬라이드 -->
+            <div class="swiper" id="nav_adver">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">나에게 어울리는 제품을 찾고 계시나요? 실시간 라이브 채팅으로 제품 추천을 받아보세요.</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">선물하기 서비스를 통해 소중한 분에게 마음을 전하세요.</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">무료 배송 반품 서비스로 젠틀몬스터의 서비스를 경험하세요.</a>
+                    </div>
+                </div><!-- swiper-wrapper -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div><!-- end swiper nav_adver -->
+            <!-- 네비게이션 -->
+            <nav>
+                <a href="#">선글라스</a>
+                <a href="#">안경</a>
+                <a href="#">콜라보레이션</a>
+                <a href="#">스타일</a>
+                <a href="#">브랜드이슈</a>
+                <a href="#">매장보기</a>
+                <a href="#">수리서비스</a>
+            </nav>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="login_bg">
+            <h2>LOGIN</h2>
+            <form action="#" method="post" id="login_frm">
+                <fieldset>
+                    <legend class="skip">로그인 양식</legend>
+                    <input type="text" name="login" id="user_id" placeholder="아이디" autofocus>
+                    <input type="password" name="login" id="user_pw" placeholder="비밀번호">
+                    <ul class="login_sub">
+                        <li class="id_frm">
+                            <input type="checkbox" name="id_save" id="save" value="save" class="hide">
+                            <label for="save"><span></span>아이디 저장</label>
+                        </li>
+                        <li class="find_frm">
+                            <a href="#" class="find_id">아이디 찾기</a>
+                            <a href="#" class="find_pw">비밀번호 찾기</a>
+                        </li>
+                    </ul>
+                    <button type="button" id="login_btn">로그인</button>
+                    <div class="fast_login">
+                        <a href="#"><img src="./images/icon_naver.png" alt="네이버"></a>
+                        <a href="#"><img src="./images/icon_kakao.png" alt="카카오"></a>
+                        <a href="#"><img src="./images/icon_apple.png" alt="애플"></a>
+                    </div>
+                    <p>또는</p>
+                    <button type="button" id="membership_btn">회원 가입</button>
+                    <button type="button" id="non_member_btn">비회원 배송 조회</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="f_menu">
+            <dl class="service">
+                <dt>고객 서비스</dt>
+                <dd><a href="#">문의</a></dd>
+                <dd><a href="#">배송</a></dd>
+                <dd><a href="#">서비스</a></dd>
+                <dd><a href="#">교환 및 반품</a></dd>
+                <dd><a href="#">주문조회</a></dd>
+                <dd><a href="#">주문취소</a></dd>
+                <dd><a href="#">매장 픽업 서비스</a></dd>
+                <dd><a href="#">수리서비스 가이드</a></dd>
+                <dd><a href="#">제품 사용 가이드</a></dd>
+                <dd><a href="#">정품 인증</a></dd>
+                <dd><a href="#">FAQ</a></dd>
+            </dl>
+            <dl class="law">
+                <dt>법적 고지</dt>
+                <dd><a href="#">공지사항</a></dd>
+                <dd><a href="#">이용약관</a></dd>
+                <dd><a href="#">개인정보처리방침</a></dd>
+                <dd><a href="#">쿠키 정책</a></dd>
+                <dd><a href="#">기프트카드 이용약관</a></dd>
+            </dl>
+            <dl class="sns">
+                <dt>소셜 미디어</dt>
+                <dd><a href="#">페이스북</a></dd>
+                <dd><a href="#">인스타그램</a></dd>
+                <dd><a href="#">유튜브</a></dd>
+                <dd><a href="#">트위터</a></dd>
+                <dd><a href="#">카카오톡</a></dd>
+                <dd><a href="#">핀터레스트</a></dd>
+                <dd><a href="#">위쳇</a></dd>
+                <dd><a href="#">웨이보</a></dd>
+            </dl>
+        </div>
+        <div class="f_copy">
+            <p class="logo"><img src="./images/logo.png" alt="2023 젠틀몬스터"></p>
+            <address>
+                주) 아이아이컴바인드 | 대표자명: 김한국 | 사업자번호: 119-86-38589 | 통신판매신고번호: 제 2014-서울마포-1050 호 (사업자 정보 확인) | 이메일 문의: cs@gentlemonster.com 
+                개인정보보호책임자: 정태호 | 주소: 서울특별시 마포구 어울마당로5길 41 | 대표번호: 1600-2126 <br>
+                고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다. 서비스 가입사실 확인
+            </address>
+        </div>
+    </footer>
+    <!-- header,footer 웹페이지 공통영역 적용 JS -->
+    <script src="./script/common.js"></script>
+</body>
+</html>
