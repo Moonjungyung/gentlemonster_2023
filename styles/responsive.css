@@ -5,9 +5,11 @@
         width: auto; height: 100%;
     }
     main .login_bg {
-        width: calc(100% - 60px);
+        max-width: calc(100% - 60px);
     }
 }/* 1500 end */
 @media screen and (max-width:900px){
     #lang {display: none;}
+    footer .f_menu {font-size: 0.777rem;}
+    footer .f_copy {font-size: 0.777rem;}
 }
