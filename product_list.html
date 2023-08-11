@@ -6,6 +6,9 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>안경 | GENTLEMONSTER</title>
+    <!-- swiper style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/product.css">
@@ -15,7 +18,48 @@
     <!-- <?php include('./header.php')?> -->
     <main>
         <!-- 1.swiper slide -->
-
+        <div class="swiper" id="product_slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                    <dl class="txt">
+                        <dt>캐주얼 & 댄디한<br>분위기 연출,</dt>
+                        <dd>GENTLE MONSTER</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide slide2">
+                    <dl class="txt">
+                        <dt>세련된 칼라, 디자인<br>초경량 프레임</dt>
+                        <dd>GENTLE MONSTER</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide slide3">
+                    <dl class="txt">
+                        <dt>깃털처럼 가벼운<br>티타늄 안경</dt>
+                        <dd>GENTLE MONSTER</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide slide4">
+                    <dl class="txt">
+                        <dt>안경 하나로 끝나는<br>여름 코디</dt>
+                        <dd>GENTLE MONSTER</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide slide5">
+                    <dl class="txt">
+                        <dt>아웃도어 룩에<br>위트 한 스푼,</dt>
+                        <dd>GENTLE MONSTER</dd>
+                    </dl>
+                </div>
+                <div class="swiper-slide slide6">
+                    <dl class="txt">
+                        <dt>다양한 취향별<br>아이웨어 가이드</dt>
+                        <dd>GENTLE MONSTER</dd>
+                    </dl>
+                </div>
+            </div> 
+            <div class="swiper-scrollbar">
+            </div>
+        </div>
         <!-- 2.category -->
         <div class="category">
             <a href="#">
@@ -158,5 +202,43 @@
     </main>
     <!-- footer.php -->
     <!-- <?php include('./footer.php')?> -->
+    <script src="./script/common.js"></script>
+    <script>
+        //특정 페이지에만 해당하는 JS 동작기능은 내부스크립트로 작성해도 된다
+        //product slide 기능은 product_list.html에만 존재한다(내부)
+        //header swiper기능은 header가 모든 페이지에 존재하기 때문에 외부에 작성해야한다.
+        const product_slide = new Swiper("#product_slide",{
+            // slidesPerView:3, /* 한번에 보이는 슬라이드 갯수 */
+            centeredSlides:true, /* 슬라이드 기준이 중심부터 시작 설정 */
+            loop:true, //무한 반복 설정
+            autoplay:{delay:2000}, //자동재생
+            speed:800, //슬라이드 전환 시 부드러운 전환
+            scrollbar:{el:'#product_slide .swiper-scrollbar'}, //스크롤바 표시
+            disableOnInteraction:false,
+            on:{
+                init:function(){
+                    //슬라이드가 변경되기 전 초기 실행함수
+                    this.slides[this.activeIndex].querySelector('.txt').style.opacity = '1'
+                    },
+                slideChange:function(){
+                    //슬라이드가 변경될 때 인식되는 실행함수
+                    //1. 활성화 전 모든 슬라이드 opacity:0
+                    this.slides.forEach(target => {
+                        target.querySelector('.txt').style.opacity ='0';
+                        target.querySelector('.txt').style.transform ='translateX(50px)';
+                    })
+                    //2. 활성화 슬라이드만 opacity:1
+                    this.slides[this.activeIndex].querySelector('.txt').style.opacity = '1';
+                    this.slides[this.activeIndex].querySelector('.txt').style.transform = 'translateX(0)';
+                }
+            },
+            breakpoints:{
+                360:{slidesPerView:1},
+                700:{slidesPerView:2, centeredSlides:false},
+                1000:{slidesPerView:3, centeredSlides:true},
+            },
+        });
+
+    </script>
 </body>
 </html>
