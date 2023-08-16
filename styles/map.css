@@ -1,0 +1,11 @@
+main {
+    width:calc(100% - 60px);
+    margin: 0 auto;
+    text-align: center;
+}
+#map {
+    background-color: lightblue;
+    width: 700px; height: 500px;  margin: 50px auto;
+}
+h1 {font-size: 2.369rem; font-weight: 700;}
+p {color: #aaa;}
